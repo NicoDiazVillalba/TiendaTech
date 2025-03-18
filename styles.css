@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #263443, #000000);
+  text-align: center;
+}
+.banner {
+  background: url("banner.jpeg") no-repeat bottom center/cover;
+  color: rgb(238, 216, 216);
+  height: 170px;
+  padding: 50px 20px;
+}
+
+.nav-bar {
+  margin-top: 20px;
+}
+
+.nav-items {
+  margin-top: 60px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-item {
+  font-size: 1.1rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 60px 15px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.nav-item a:hover {
+  color: rgb(103, 103, 222);
+}
+
+@media (max-width: 768px) {
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.nav-item a {
+  display: block;
+  padding: 8px 15px;
+}
+
+.titulo-productos {
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(251, 251, 251);
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.contenedor-productos {
+  font-family: "Tektur", sans-serif;
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.producto {
+  color: white;
+  align-items: center;
+  width: 300px;
+  background: linear-gradient(135deg, #000000, #1f2123);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.producto-img {
+  max-width: 100%;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.7s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #2c2b2b, #393c40);
+}
+
+.registro {
+  width: 500px;
+  color: white;
+  background: linear-gradient(135deg, #374556, #2a2929);
+  padding: 10px;
+  margin: 60px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  place-items: center;
+}
+
+.btn-registro {
+  width: 90px;
+  height: 30px;
+  border: none;
+  color: white;
+  background-color: #07799c;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.btn-registro:hover {
+  background-color: #0a94bd;
+}
+
+input,
+button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+}
+footer {
+  background: #333;
+  color: white;
+  padding: 10px;
+  bottom: 0;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #07799c, #3ef6de);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s;
+}
+
+.scroll-top:hover {
+  background: linear-gradient(135deg, #05546b, #31c0ad);
+}
+
+.scroll-top.show {
+  display: block;
+}

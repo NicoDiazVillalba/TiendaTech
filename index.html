@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/883b0554f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="banner" id="inicio">
+            <h1>Bienvenido a Tienda Tech</h1>
+            <p>Accesorios de tecnología y videojuegos al mejor precio</p>
+            <div class="nav-bar">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#inicio>">Inicio</a></li>
+                    <li class="nav-item"><a href="#productos">Productos</a></li>
+                    <li class="nav-item"><a href="#registro">Registro</a></li>
+                    <li class="nav-item"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="productos" id="productos">
+        <h2 class="titulo-productos">Productos Destacados</h2>
+        <div class="contenedor-productos">
+            <div class="producto">
+                <img class="producto-img" src="productos_img/producto1.png" alt="Producto 1">
+                <p>Auriculares G</p>
+            </div>
+            <div class="producto">
+                <img class="producto-img" src="productos_img/producto2.png" alt="Producto 2">
+                <p>Base audífonos</p>
+            </div>
+            <div class="producto">
+                <img class="producto-img" src="productos_img/producto3.png" alt="Producto 3">
+                <p>CPU Computador - PC Torre Gamer Ryzen 5 3400</p>
+            </div>
+            <div class="producto">
+                <img class="producto-img" src="productos_img/producto4.png" alt="Producto 4">
+                <p>CAIXUN Monitor Gamer Curvo Caixun</p>
+            </div>
+            <div class="producto">
+                <img class="producto-img" src="productos_img/producto5.png" alt="Producto 5">
+                <p>Mouse Redragon PREDATOR M612 BLACK </p>
+            </div>
+            <div class="producto">
+                <img class="producto-img" src="productos_img/producto6.png" alt="Producto 6">
+                <p>Silla Gamer Premium 125x69x54 Negro/Rojo</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="registro" id="registro">
+        <h2>Regístrate para recibir novedades</h2>
+        <form action="registro.php" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <br><button type="submit" class="btn-registro">Registrarse</button>
+        </form>
+    </section>
+
+    <footer>
+        <section class="contacto" id="contacto">
+            <h3>Contacto</h3>
+            <p>Email: diaznsoporte@tiendatech.com</p>
+            <p>Teléfono: 3133510008</p>
+        </section>
+        <br><p>&copy; 2025 Tienda Tech - Todos los derechos reservados</p>
+
+    </footer>
+    <button id="btn-scroll-top" class="scroll-top"><i class="fa-solid fa-up-long"></i></button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
